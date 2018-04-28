@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/estilos.css">
+  <script src="js/control.js"></script>
+  <script src="js/controlApagar.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <title>compra</title>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-dark fixed-top bg-dark">
+    <button type="button" id="atras" onclick="window.location.href = 'index.html'">
+          <img class="list-group-image" src="imagenes/back.png" alt="" />
+    </button>
+    <a class="navbar-brand" href="index.html">iFridge</a>
+    <button disabled id="estadoNevera">
+    </button>
+  </nav>
+
+  <main role="main">
+    <div class="jumbotron">
+      <div class="container">
+        <h2 class="display-5">Configuración</h2>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="input-group input-group-lg container">
+        <span class="input-group-addon container">  <h3>Temperatura nevera </h3></span>
+        <div class="slidecontainer" id="varNevera">
+
+        </div>
+        <h1 id="sNevera">
+        </h1>
+      </div>
+      <br />
+
+      <div class="input-group input-group-lg container">
+        <span class="input-group-addon container">  <h3><p>Temperatura congelador</p> </h3></span>
+        <div class="slidecontainer" id="varCongelador">
+
+        </div>
+        <h1 id="sCongelador">
+        </h1>
+      </div>
+      <br />
+
+      <div class="card-body">
+        <h5 class="card-title pricing-card-title">Servicio Tecnico</small></h5>
+        <p text-center>
+          618 456 160
+        </p>
+        <button type="button" class="btn btn-lg btn-primary">
+          <a href="tel:+34618456160">
+            <img class="list-group-image" src="imagenes/telefono.png" alt="" />
+          </a>
+        </button>
+      </div>
+
+      <div class="container">
+        <div class="card-body text-center">
+          <button type="button" class="btn btn-lg" id="botonApagar"></button>
+        </div>
+      </div>
+
+    </div>
+    </div>
+    </div>
+  </main>
+
+</body>
+
+</html>

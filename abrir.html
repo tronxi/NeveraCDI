@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/estilos.css">
+  <script src="js/control.js"></script>
+  <script src="js/controlAbrir.js"></script>
+  <script src="js/controlAguaHielo.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <title>abrir</title>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-dark fixed-top bg-dark">
+    <button type="button" id="atras" onclick="window.location.href = 'index.html'">
+          <img class="list-group-image" src="imagenes/back.png" alt="" />
+    </button>
+    <a class="navbar-brand" href="index.html">iFridge</a>
+    <button disabled id="estadoNevera">
+    </button>
+  </nav>
+
+  <main role="main">
+    <div class="container">
+      <p>
+      </p>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 text-center container">
+          <button type="button" class="btn btn-lg center-block boton" id="nevera">neveraA</button>
+          <button type="button" class="btn btn-lg center-block boton" id="congelador"><img class="list-group-image" src="imagenes/congeladorCerradoGrande.png" alt=""></button>
+        </div>
+        <div class="container">
+          <p>
+
+          </p>
+        </div>
+        <div class="col-md-4 cajon">
+          <div class="card mb-4 box-shadow">
+            <button type="button" class="btn btn-lg" id="cajon1"><img class="list-group-image" src="imagenes/cajonCerrado.png" alt=""></button>
+          </div>
+        </div>
+
+        <div class="col-md-4 cajon">
+          <div class="card mb-4 box-shadow">
+            <button type="button" class="btn btn-lg" id="cajon2"><img class="list-group-image" src="imagenes/cajonCerrado.png" alt=""></button>
+          </div>
+        </div>
+
+        <div class="col-md-4 cajon">
+          <div class="card mb-4 box-shadow">
+            <button type="button" class="btn btn-lg" id="cajon3"><img class="list-group-image" src="imagenes/cajonCerrado.png" alt=""></button>
+          </div>
+        </div>
+
+        <div class="col-sm-12 text-center container">
+          <button type="button" class="btn btn-lg center-block boton" id="agua">
+            <img class="list-group-image" src="imagenes/agua.png" alt="" />
+          </button>
+
+          <button type="button" class="btn btn-lg center-block boton" id="hielo">
+            <img class="list-group-image" src="imagenes/hielo.png" alt="" />
+          </button>
+          <div class="alert alert-info alerta" role="alert" id="alertaAgua">
+            <strong>Saliendo agua</strong>
+          </div>
+          <div class="alert alert-info alerta" role="alert" id="alertaHielo">
+            <strong>Saliendo hielo</strong>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+</body>
+</body>
+
+</html>

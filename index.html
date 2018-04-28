@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/estilos.css">
+  <script src="js/control.js"></script>
+  <script src="js/controlIndex.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <title>index</title>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="#">iFridge</a>
+    <button disabled id="estadoNevera">
+    </button>
+  </nav>
+
+  <main role="main">
+
+    <div class="container">
+      <p>
+      </p>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 opcionDesactivar">
+          <div class="card mb-4 box-shadow">
+            <button type="button" class="btn btn-lg" onclick="window.location.href = 'abrir.html'">
+              <img class="list-group-image" src="imagenes/nevera.png" alt="" />
+            </button>
+          </div>
+        </div>
+
+        <div class="col-md-4 opcionDesactivar">
+          <div class="card mb-4 box-shadow">
+            <button type="button" class="btn btn-lg" onclick="window.location.href = 'alimentos.html'">
+              <img class="list-group-image" src="imagenes/alimentos.png" alt="" />
+            </button>
+          </div>
+        </div>
+
+        <div class="col-md-4 opcionDesactivar">
+          <div class="card mb-4 box-shadow">
+            <button type="button" class="btn btn-lg" onclick="window.location.href = 'compra.html'">
+              <img class="list-group-image" src="imagenes/carritoGrandeColor.png" alt="" />
+            </button>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-4 box-shadow">
+            <button type="button" class="btn btn-lg" onclick="window.location.href = 'ajustes.html'">
+              <img class="list-group-image" src="imagenes/ajustes.png" alt="" />
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="alert alert-warning" id="alertaApagada" role="alert">
+        Nevera Apagada
+      </div>
+    </div>
+  </main>
+
+</body>
+
+</html>
